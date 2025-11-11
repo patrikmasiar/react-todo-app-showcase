@@ -49,10 +49,10 @@ npm start
 
 ### 🧠 Čo aplikácia robí
 Táto jednoduchá aplikácia umožňuje:
-	•	✏️ Pridávať nové úlohy (TODO)
-	•	✅ Označovať úlohy ako hotové (checkbox)
-	•	❌ Vymazávať úlohy
-	•	📊 Zobrazuje počet aktuálnych úloh
+* ✏️ Pridávať nové úlohy (TODO)
+*	✅ Označovať úlohy ako hotové (checkbox)
+* ❌ Vymazávať úlohy
+* 📊 Zobrazuje počet aktuálnych úloh
 
 Všetky úlohy sa ukladajú do React state, nič sa neukladá do súboru ani do databázy.
 Je to teda ideálny príklad na pochopenie základov Reactu: useState, map, filter a eventy.
