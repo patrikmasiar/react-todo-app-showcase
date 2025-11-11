@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🧩 Jednoduchá TODO aplikácia v Reacte
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tento projekt je **jednoduchá React TODO aplikácia**, vytvorená pre výučbu základov Reactu.
+Všetko sa nachádza v jednom súbore `App.jsx`, aby bolo jasne vidieť, ako React funguje.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Ako si vytvoriť novú React aplikáciu
 
-### `npm start`
+Ak si chceš vytvoriť vlastnú React aplikáciu od začiatku, postupuj podľa týchto krokov:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1️⃣ Nainštaluj si Node.js
+Najprv si nainštaluj [Node.js](https://nodejs.org/)
+➡️ Odporúčaná verzia: **LTS (Long Term Support)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Po nainštalovaní over, že všetko funguje:
+```bash
+node -v
+npm -v
+```
 
-### `npm test`
+## 2️⃣ Vytvor novú React aplikáciu
+Pomocou príkazu create-react-app vytvor nový projekt:
+```bash
+npx create-react-app moja-aplikacia
+```
+* (príkaz npx automaticky stiahne a spustí create-react-app, nie je potrebné nič inštalovať naviac)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3️⃣ Prejdi do projektu
+```bash
+cd moja-aplikacia
+```
 
-### `npm run build`
+## 4️⃣ Spusti vývojový server
+```bash
+npm start
+```
+* ➡️ Aplikácia sa otvorí automaticky v prehliadači na adrese
+* 👉 http://localhost:3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Ako spustiť túto TODO aplikáciu
+Ak si si stiahol tento projekt z GitHubu, stačí spustiť tieto príkazy:
+```bash
+npm install
+npm start
+```
+* 🔧 nainštalujú všetky potrebné balíčky
+* 🚀 spustí vývojový server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🧠 Čo aplikácia robí
+Táto jednoduchá aplikácia umožňuje:
+	•	✏️ Pridávať nové úlohy (TODO)
+	•	✅ Označovať úlohy ako hotové (checkbox)
+	•	❌ Vymazávať úlohy
+	•	📊 Zobrazuje počet aktuálnych úloh
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Všetky úlohy sa ukladajú do React state, nič sa neukladá do súboru ani do databázy.
+Je to teda ideálny príklad na pochopenie základov Reactu: useState, map, filter a eventy.
 
-### `npm run eject`
+### 🧠 Použité React koncepty
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💅 Štýly
+Štýly sa nachádzajú v súbore App.css, ktorý sa načítava automaticky.
+Používame len základné CSS — žiadne knižnice, aby bolo jasné, čo robí React a čo CSS.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 📚 Čo sa naučíš
+✅ Základy React komponentov
+✅ Práca so state a eventami
+✅ Riešenie problémov s renderovaním
+✅ Práca s políčkami (map, filter)
+✅ Tvorba malého projektu od nuly
