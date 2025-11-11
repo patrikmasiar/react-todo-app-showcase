@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/* Základné rozloženie */
+.app {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family:
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        Arial,
+        sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    margin-bottom: 16px;
+    font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Formulár */
+.todo-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-form button:hover {
+    opacity: 0.9;
+}
+
+/* Počítadlo */
+.counter {
+    margin: 8px 0 16px;
+    color: #555;
+}
+
+/* Zoznam úloh */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f6f6f6;
+    border: 1px solid #eee;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+/* Obsah úlohy (checkbox + text) */
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+/* Prečiarknutie hotovej úlohy */
+.todo-list li.done span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Tlačidlo vymazať */
+.delete-btn {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #fff;
 }
